@@ -1,0 +1,8 @@
+require or include : 
+- to file path "C:\\.........\\ ... \\fileName.php" 
+- can use with it "..\"  to go to parent
+ 
+use : to class path "name space"
+
+To check if file found: file_exists()
+To check if class found: class_exists()
