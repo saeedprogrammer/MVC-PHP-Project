@@ -8,7 +8,7 @@ namespace MVC\app\controller;
 class IndexController extends AbstractController
 {
 	function __construct() {
-		echo "</br>";
+		//echo "</br>";
 		echo "IndexController";
 		
   }

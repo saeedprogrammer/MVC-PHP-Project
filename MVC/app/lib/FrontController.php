@@ -7,8 +7,11 @@ class FrontController
 private $__controller = "Index";
 private $__action  = "default";
 private $__param = array();
-	function __construct() {
+
+private $templete;
+	function __construct(Templete $templete) {
         $this->parseURL();
+         $this->templete = $templete;
   }
 
   private function parseURL()
@@ -65,6 +68,7 @@ private $__param = array();
      }
 
      $controller->params =  $this->__param;
+     $controller->setTemplete($this->templete);
      $controller->$action();	
 
 

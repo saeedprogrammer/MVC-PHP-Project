@@ -16,7 +16,7 @@ class EmployeeController extends AbstractController
 {
 	use  Helper;
 	function __construct() {
-		echo "</br>";
+		//echo "</br>";
 		//echo "IndexController";
 		//define('SS', 'saeed');
 		//echo SS;
@@ -28,7 +28,7 @@ class EmployeeController extends AbstractController
 	{
 
 
-		$this->data["employee"] = Employee::getAll();
+		$this->data["employees"] = Employee::getAll();
 
 		$className = str_replace('Controller','',basename(__CLASS__)) ;
 		$functionName = str_replace('Action','',basename(__FUNCTION__)) ;

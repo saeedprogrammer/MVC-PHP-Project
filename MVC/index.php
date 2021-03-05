@@ -1,18 +1,22 @@
 <?php
 namespace MVC;
 
+//echo "saeed";
 require "app\model\DB.php";
 use PDO;
 
-require "app\config.php";
 
+require "app\config.php";
+$templeteConfig = require "app\\templeteconfig.php";
+
+use MVC\app\lib\Templete;
 use MVC\app\lib\FrontController;
 require("app/lib/autoload.php");
 
 
 
-
-$frontController = new  FrontController();
+$templete = new Templete($templeteConfig);
+$frontController = new  FrontController($templete);
 $frontController->dispatch();
 
 

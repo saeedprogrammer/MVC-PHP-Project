@@ -1,3 +1,4 @@
+<div id="w">
 <p>I am employee </p>
 <form action="/employee/add"  method="post">
 
@@ -35,8 +36,10 @@ table tr:nth-child(even)  {
 
 <?php
 
-//var_dump(expression)$employee
-foreach ($employee as $emp) {
+/*echo "<pre>";
+var_dump($employees);
+echo "</pre>";*/
+foreach ($employees as $emp) {
 	echo "<tr>";
 		echo "<td>".$emp->name ."</td>" ;
 		echo "<td>".$emp->age."</td>" ;
@@ -49,3 +52,4 @@ foreach ($employee as $emp) {
 ?>
 
 </table>
+</div>

@@ -73,39 +73,6 @@ margin-bottom:10px;
 	</form>
 	
 	
-	<table id="employee-table" style="width:40%">
-	<tr>
-		<th>Name</th>
-		<th>Age	</th>
-		<th>Salary	</th>
-		
-	</tr>
 	
-	
-	<?php 
-	/*if (empty($personArray))
-	{
-	    echo "<tr>";
-		echo "<td colspan='5'> Sorry no employees </td>";
-	    echo "</tr>";
-	}
-	else
-	{
-	foreach ( $personArray as $person )
-		{
-		echo "<tr>";
-		echo "<td>".$person->name."</td>";
-		echo "<td>".$person->age."</td>";
-		echo "<td>".$person->calculateSalary()."</td>";
-		echo "<td> <a  class='fa fa-edit' href='/?action=edit&id=".$person->ID."'</a></td>";
-		echo "<td> <a  class='fa fa-times' href='/?action=delete&id=".$person->ID."'</a></td>";
-		
-	    echo "</tr>";
-		}
-	}*/
-		
-	?>
-
-	</table>
 </body>
 </html>

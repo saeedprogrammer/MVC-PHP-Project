@@ -1,0 +1,31 @@
+.navBar
+{
+	float: right;
+	
+	height: 100%;
+	background-color: #3c2901;
+	
+
+}
+
+.menue
+{
+	width: 25px;
+    height: 25px;
+    margin: auto;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.expanded_navBar
+{
+	width: 150px;
+	transition: width 0.3s;
+}
+
+.collapsed_navBar
+{
+	width: 40px;
+	transition: width 0.3s;
+}
